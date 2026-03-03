@@ -29,10 +29,10 @@ export default function LoginMobile(){
         localStorage.setItem('role', role)
         localStorage.setItem('loggedIn', 'true')
         if (role === 'ADMIN' || role === 'ROLE_ADMIN') {
-          window.location.href = 'http://localhost:5173/admin/dashboard'
+          window.location.href = 'https://nestfinderfrontend.vercel.app/admin/dashboard'
           return
         } else {
-          window.location.href = `http://localhost:5173/user/user_product?message=${encodeURIComponent(message)}`
+          window.location.href = `https://nestfinderfrontend.vercel.app/user/user_product?message=${encodeURIComponent(message)}`
           return
         }
       }
